@@ -1,14 +1,91 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CNI Document Assistant</title>
-</head>
-<body>
-    <h1>CNI Document Assistant</h1>
-    <p>Prototipo Inicial - Equipo 2</p>
 
+    <title>CNI Document Assistant</title>
+
+    <!-- Archivo de estilos -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>CNI Document Assistant</h1>
+        <p>Gestión de consultas y borradores técnicos</p>
+    </header>
+
+    <main>
+
+        <!-- Sección para registrar consultas -->
+        <section id="seccion-registro">
+            <h2>Nueva consulta</h2>
+
+            <form id="form-consulta">
+
+                <label for="tipo-consulta">Tipo de consulta</label>
+                <select id="tipo-consulta" required>
+                    <option value="">Seleccionar tipo</option>
+                    <option value="Curaduría">Curaduría</option>
+                    <option value="Revisor Externo">Revisor Externo</option>
+                </select>
+
+                <label for="asunto-consulta">Asunto</label>
+                <input type="text" id="asunto-consulta" required>
+
+                <label for="descripcion-consulta">Descripción</label>
+                <textarea id="descripcion-consulta" required></textarea>
+
+                <button type="submit">Registrar consulta</button>
+
+            </form>
+        </section>
+
+        <!-- Sección del historial -->
+        <section id="seccion-historial">
+            <h2>Historial de consultas</h2>
+
+            <div id="lista-consultas">
+                <p>No hay consultas para mostrar.</p>
+            </div>
+        </section>
+
+        <!-- Sección de detalles y borradores -->
+        <section id="seccion-detalle">
+            <h2>Detalle de la consulta</h2>
+
+            <div id="detalle-consulta">
+                <p>Selecciona una consulta del historial.</p>
+            </div>
+
+            <h3>Borrador de respuesta</h3>
+
+            <label for="texto-borrador">Respuesta</label>
+            <textarea id="texto-borrador"></textarea>
+
+            <label for="estado-borrador">Estado</label>
+            <select id="estado-borrador">
+                <option value="En revisión">En revisión</option>
+                <option value="Aprobado">Aprobado</option>
+                <option value="Enviado">Enviado</option>
+            </select>
+
+            <button id="btn-guardar-borrador" type="button">
+                Guardar borrador
+            </button>
+        </section>
+
+    </main>
+
+    <!-- Archivos JavaScript -->
     <script src="js/storage.js"></script>
+    <script src="js/consultas.js"></script>
+    <script src="js/historial.js"></script>
+    <script src="js/borradores.js"></script>
+    <script src="js/app.js"></script>
+
 </body>
 </html>
