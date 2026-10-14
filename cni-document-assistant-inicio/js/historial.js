@@ -1,0 +1,1 @@
+//Visualización del historial y detalles de consultas
