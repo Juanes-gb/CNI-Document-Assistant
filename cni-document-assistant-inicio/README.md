@@ -94,7 +94,7 @@ cni-document-assistant-inicio/
 
 ## Enlace al prototipo
 
-**Pendiente:** agregar la dirección pública de la aplicación una vez configurada su publicación.
+🌐 [Acceder a CNI Document Assistant](https://juanes-gb.github.io/CNI-Document-Assistant/cni-document-assistant-inicio/)
 
 ## Estado de la entrega
 
@@ -106,7 +106,7 @@ cni-document-assistant-inicio/
 - [x] Interfaz organizada y adaptable.
 - [x] Panel de estadísticas.
 - [x] Documentación de ejecución y decisiones técnicas.
-- [ ] Publicación de un enlace navegable.
+- [x] Publicación de un enlace navegable.
 
 ## Etapas posteriores (no implementadas en esta entrega)
 
