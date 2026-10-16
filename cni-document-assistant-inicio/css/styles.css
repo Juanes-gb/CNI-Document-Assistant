@@ -54,6 +54,19 @@ form {
     gap: 12px;
 }
 
+.mensaje-registro {
+    min-height: 1.5em;
+    margin: 12px 0 0;
+}
+
+.mensaje-registro--exito {
+    color: #176b45;
+}
+
+.mensaje-registro--error {
+    color: #b42318;
+}
+
 label {
     display: block;
     margin-top: 12px;
