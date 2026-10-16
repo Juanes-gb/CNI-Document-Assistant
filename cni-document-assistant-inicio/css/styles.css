@@ -269,3 +269,109 @@ textarea:focus {
 .mensaje-borrador--error {
     color: #b42318;
 }
+
+/* Mejoras visuales generales */
+
+body {
+    background-color: #f3f4f6;
+    line-height: 1.5;
+}
+
+header {
+    padding: 28px 40px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
+}
+
+header h1 {
+    font-size: 1.7rem;
+    letter-spacing: -0.5px;
+}
+
+header p {
+    color: #667085;
+    font-size: 0.95rem;
+}
+
+main {
+    max-width: 1250px;
+    margin: 0 auto;
+    gap: 24px;
+}
+
+section {
+    border: 1px solid #e9eaec;
+    border-radius: 14px;
+    padding: 28px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
+}
+
+section h2 {
+    margin-top: 0;
+    padding-bottom: 12px;
+    border-bottom: 2px solid #fff0f3;
+}
+
+input,
+select,
+textarea {
+    background-color: #fafbfc;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+button {
+    font-weight: 600;
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+button:active {
+    transform: scale(0.99);
+}
+
+/* Resaltado de las consultas del historial */
+.consulta-item {
+    border-radius: 8px;
+    transition: background-color 0.2s, border-color 0.2s;
+}
+
+.consulta-item:hover {
+    border-color: #ff1750;
+}
+
+/* Panel de estadísticas */
+
+#seccion-estadisticas {
+    grid-column: 1 / -1;
+}
+
+.contenedor-estadisticas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.tarjeta-estadistica {
+    background-color: #fff5f7;
+    border: 1px solid #ffd6e0;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+}
+
+.tarjeta-estadistica p {
+    margin: 0 0 10px;
+    color: #666666;
+    font-size: 0.95rem;
+}
+
+.tarjeta-estadistica span {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ff1750;
+}
+
+/* Estadísticas en pantallas pequeñas */
+@media (max-width: 768px) {
+    .contenedor-estadisticas {
+        grid-template-columns: 1fr;
+    }
+}

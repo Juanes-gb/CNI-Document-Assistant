@@ -20,6 +20,30 @@
 
     <main>
 
+        <!-- Panel de estadísticas -->
+        <section id="seccion-estadisticas">
+            <h2>Resumen de consultas</h2>
+
+            <div class="contenedor-estadisticas">
+
+                <div class="tarjeta-estadistica">
+                    <p>Total de consultas</p>
+                    <span id="total-consultas">0</span>
+                </div>
+
+                <div class="tarjeta-estadistica">
+                    <p>En revisión</p>
+                    <span id="consultas-revision">0</span>
+                </div>
+
+                <div class="tarjeta-estadistica">
+                    <p>Aprobadas</p>
+                    <span id="consultas-aprobadas">0</span>
+                </div>
+
+            </div>
+        </section>
+
         <!-- Sección para registrar consultas -->
         <section id="seccion-registro">
             <h2>Nueva consulta</h2>
@@ -42,7 +66,12 @@
                 <button type="submit">Registrar consulta</button>
 
             </form>
-            <p id="mensaje-registro" class="mensaje-registro" role="status" aria-live="polite"></p>
+
+            <!-- Mensaje de confirmación del registro -->
+            <p id="mensaje-registro"
+               class="mensaje-registro"
+               role="status"
+               aria-live="polite"></p>
         </section>
 
         <!-- Sección del historial -->
@@ -64,8 +93,9 @@
 
             <h3>Borrador de respuesta</h3>
 
-            <!-- Deshabilitado hasta seleccionar una consulta (lo habilita borradores.js) -->
+            <!-- Deshabilitado hasta seleccionar una consulta -->
             <fieldset id="campos-borrador" disabled>
+
                 <label for="texto-borrador">Respuesta</label>
                 <textarea id="texto-borrador"></textarea>
 
@@ -79,9 +109,14 @@
                 <button id="btn-guardar-borrador" type="button">
                     Guardar borrador
                 </button>
+
             </fieldset>
 
-            <p id="mensaje-borrador" class="mensaje-borrador" role="status" aria-live="polite"></p>
+            <!-- Mensaje de confirmación del borrador -->
+            <p id="mensaje-borrador"
+               class="mensaje-borrador"
+               role="status"
+               aria-live="polite"></p>
         </section>
 
     </main>
