@@ -60,6 +60,9 @@ formularioConsulta.addEventListener("submit", (evento) => {
         return;
     }
 
+    // Avisamos a la aplicación para que el historial muestre la consulta recién guardada.
+    document.dispatchEvent(new CustomEvent("consultasActualizadas"));
+
     // Al guardar correctamente, limpiamos el formulario y confirmamos el registro.
     formularioConsulta.reset();
     mostrarMensajeRegistro(
