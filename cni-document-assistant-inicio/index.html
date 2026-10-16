@@ -63,19 +63,24 @@
 
             <h3>Borrador de respuesta</h3>
 
-            <label for="texto-borrador">Respuesta</label>
-            <textarea id="texto-borrador"></textarea>
+            <!-- Deshabilitado hasta seleccionar una consulta (lo habilita borradores.js) -->
+            <fieldset id="campos-borrador" disabled>
+                <label for="texto-borrador">Respuesta</label>
+                <textarea id="texto-borrador"></textarea>
 
-            <label for="estado-borrador">Estado</label>
-            <select id="estado-borrador">
-                <option value="En revisión">En revisión</option>
-                <option value="Aprobado">Aprobado</option>
-                <option value="Enviado">Enviado</option>
-            </select>
+                <label for="estado-borrador">Estado</label>
+                <select id="estado-borrador">
+                    <option value="En revisión">En revisión</option>
+                    <option value="Aprobado">Aprobado</option>
+                    <option value="Enviado">Enviado</option>
+                </select>
 
-            <button id="btn-guardar-borrador" type="button">
-                Guardar borrador
-            </button>
+                <button id="btn-guardar-borrador" type="button">
+                    Guardar borrador
+                </button>
+            </fieldset>
+
+            <p id="mensaje-borrador" class="mensaje-borrador" role="status" aria-live="polite"></p>
         </section>
 
     </main>
